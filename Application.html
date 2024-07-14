@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applications - RAMAN A GHORPADE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #ff3131;
+            --secondary-color: #1a1a1a;
+            --text-color: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            color: var(--text-color);
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            padding: 0 5%;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid var(--primary-color);
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            background-color: var(--secondary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-symbol {
+            color: var(--primary-color);
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        h1, h2, h3 {
+            color: var(--primary-color);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            margin: 40px 0;
+        }
+
+        .app-list {
+            margin-bottom: 40px;
+        }
+
+        .app-item {
+            background-color: var(--secondary-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .app-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .app-item h3 {
+            margin-bottom: 10px;
+        }
+
+        .app-item a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .app-details {
+            margin-top: 40px;
+        }
+
+        .app-details h2 {
+            margin-bottom: 20px;
+        }
+
+        .app-details p {
+            margin-bottom: 20px;
+        }
+
+        .app-details ul {
+            list-style-type: none;
+            margin-bottom: 20px;
+        }
+
+        .app-details ul li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .app-details ul li::before {
+            content: "✦";
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+        }
+
+        .video-container {
+            margin-bottom: 20px;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .download-button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-button:hover {
+            background-color: #ff5555;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+
+            nav ul {
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <span class="logo-symbol">{/}</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="HOMEPAGE.html">HOME</a></li>
+                    <li><a href="ABOUT ME.html">ABOUT ME</a></li>
+                    <li><a href="Games.html">GAMES</a></li>
+                    <li><a href="Application.html">APPLICATIONS</a></li>
+                    <li><a href="#websites">WEBSITES</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Applications</h1>
+
+            <div class="app-list">
+                <div class="app-item">
+                    <h3><a href="#crimson-chord">Crimson Chord</a></h3>
+                    <p>A user-friendly music player designed to load and play all MP3 audio songs stored on your device's local storage.</p>
+                </div>
+                <!-- Add more application items here as you develop them -->
+            </div>
+
+            <div id="crimson-chord" class="app-details">
+                <h2>Crimson Chord</h2>
+                <h3>Description</h3>
+                <p>Crimson Chord is a user-friendly music player designed to load and play all MP3 audio songs stored on your device's local storage. The app features an intuitive interface, making it easy to navigate and enjoy your music collection. It supports background play, allowing you to listen to your favorite tracks while using other applications.</p>
+
+                <h3>Key Features</h3>
+                <ul>
+                    <li>User-friendly interface for easy navigation</li>
+                    <li>Plays all MP3 audio songs from local storage</li>
+                    <li>Supports background play</li>
+                    <li>Intuitive music controls</li>
+                    <li>Smooth playback experience</li>
+                </ul>
+
+                <h3>App Preview</h3>
+                <div class="video-container">
+                    <video controls>
+                        <source src="Chrimson Chord.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <h3>Download</h3>
+                <a href="Chrimson Chord.apk" class="download-button" download>Download Crimson Chord</a>
+
+                <h3>Technologies Used</h3>
+                <ul>
+                    <li><strong>Programming Language:</strong> Kotlin</li>
+                    <li><strong>Framework:</strong> Android SDK</li>
+                    <li><strong>Development Environment:</strong> Android Studio</li>
+                </ul>
+
+                <h3>Why Choose Crimson Chord?</h3>
+                <p>Crimson Chord offers a seamless music playback experience with its clean interface and efficient performance. Whether you're a casual listener or a music enthusiast, this app provides an easy way to enjoy your entire MP3 collection on your Android device. With background play support, you can multitask while your favorite tunes keep playing.</p>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
