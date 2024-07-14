@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAMAN A GHORPADE - Digital Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #ff3131;
+            --secondary-color: #1a1a1a;
+            --text-color: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            color: var(--text-color);
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            padding: 0 5%;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid var(--primary-color);
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            background-color: var(--secondary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-symbol {
+            color: var(--primary-color);
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        .images {
+            display: flex;
+            justify-content: space-between;
+            margin: 40px 0;
+        }
+
+        .images img {
+            width: 48%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(255, 49, 49, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            margin-bottom: 30px;
+            color: var(--primary-color);
+        }
+
+        .intro ul {
+            list-style-type: none;
+            margin-bottom: 20px;
+        }
+
+        .intro ul li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .intro ul li::before {
+            content: "✦";
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+        }
+
+        .intro p {
+            text-align: justify;
+            margin-bottom: 30px;
+        }
+
+        .about ul {
+            list-style-type: none;
+        }
+
+        .about ul li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .about ul li::before {
+            content: "🔥";
+            position: absolute;
+            left: 0;
+        }
+
+        .about ul li a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .social-icons a {
+            margin: 0 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.1);
+        }
+
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+
+            nav ul {
+                margin-top: 20px;
+            }
+
+            .images {
+                flex-direction: column;
+            }
+
+            .images img {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <span class="logo-symbol">{/}</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="HOMEPAGE.html">HOME</a></li>
+                    <li><a href="ABOUT%20ME.html">ABOUT ME</a></li>
+                    <li><a href="Games.html">GAMES</a></li>
+                    <li><a href="Application.html">APPLICATIONS</a></li>
+                    <li><a href="#websites">WEBSITES</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="images">
+                <img src="GRAPHIC2.jpg" alt="Game Development" loading="lazy">
+                <img src="GRAPHIC.jpg" alt="Web Development Setup" loading="lazy">
+            </div>
+
+            <h1>Welcome to My Digital Studio</h1>
+
+            <div class="intro">
+                <ul>
+                    <li>Transforming ideas into immersive apps, websites, and games.</li>
+                    <li>Innovative developer crafting digital experiences that captivate and inspire.</li>
+                    <li>Where creativity meets technology to bring your vision to life.</li>
+                </ul>
+
+                <p>
+                    Hi, I'm RAMAN A GHORPADE, a dedicated app developer, web designer, and
+                    game creator. I specialize in turning innovative concepts into impactful digital
+                    solutions. Explore my portfolio to see the diverse projects I've crafted and learn how I
+                    can bring your vision to life.
+                </p>
+            </div>
+
+            <hr style="border: none; height: 1px; background-color: var(--primary-color); margin: 40px 0;">
+
+            <div class="about">
+                <ul>
+                    <li><a href="ABOUT%20ME.html">About Me</a>: Learn more about my journey, skills, and passion for technology.</li>
+                    <li><a href="Games.html">Games</a>: Explore the immersive and engaging games I've developed.</li>
+                    <li><a href="Application.html">Applications</a>: Check out the versatile and user-friendly applications I've created.</li>
+                    <li><a href="#websites">Websites</a>: View the dynamic and responsive websites I've designed.</li>
+                    <li><a href="#contact">Contact</a>: Get in touch to discuss your project ideas and collaboration opportunities.</li>
+                </ul>
+            </div>
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com/share/oFDSE7rGdVztcAxP/" target="_blank" rel="noopener noreferrer"><img src="FACEBOOK%20ICON.png" alt="Facebook"></a>
+                <a href="https://chat.whatsapp.com/K3JoPA6znFI0NftMRdMl98" target="_blank" rel="noopener noreferrer"><img src="WHATSAPP%20ICON.png" alt="WhatsApp"></a>
+                <a href="https://www.instagram.com/reds_blacks?igsh=bTNhMXNiZGFwZzB2" target="_blank" rel="noopener noreferrer"><img src="INSTAGRAM%20ICON.png" alt="Instagram"></a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
