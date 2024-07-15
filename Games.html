@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games - RAMAN A GHORPADE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #ff3131;
+            --secondary-color: #1a1a1a;
+            --text-color: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            color: var(--text-color);
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            padding: 0 5%;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid var(--primary-color);
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            background-color: var(--secondary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-symbol {
+            color: var(--primary-color);
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        h1, h2, h3 {
+            color: var(--primary-color);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            margin: 40px 0;
+        }
+
+        .game-list {
+            margin-bottom: 40px;
+        }
+
+        .game-item {
+            background-color: var(--secondary-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .game-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .game-item h3 {
+            margin-bottom: 10px;
+        }
+
+        .game-item a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .game-details {
+            margin-top: 40px;
+        }
+
+        .game-details h2 {
+            margin-bottom: 20px;
+        }
+
+        .game-details p {
+            margin-bottom: 20px;
+        }
+
+        .game-details ul {
+            list-style-type: none;
+            margin-bottom: 20px;
+        }
+
+        .game-details ul li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .game-details ul li::before {
+            content: "✦";
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+        }
+
+        .video-container {
+            margin-bottom: 20px;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .download-button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-button:hover {
+            background-color: #ff5555;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+
+            nav ul {
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <span class="logo-symbol">{/}</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="ABOUT ME.html">ABOUT ME</a></li>
+                    <li><a href="Games.html">GAMES</a></li>
+                    <li><a href="Application.html">APPLICATIONS</a></li>
+                    <li><a href="websites.html">WEBSITES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Games</h1>
+
+            <div class="game-list">
+                <div class="game-item">
+                    <h3><a href="#angry">Angry</a></h3>
+                    <p>A fast-paced, addictive game where your reflexes and precision are put to the ultimate test.</p>
+                </div>
+                <!-- Add more game items here as you develop them -->
+            </div>
+
+            <div id="angry" class="game-details">
+                <h2>Angry</h2>
+                <h3>Overview</h3>
+                <p>Dive into the exhilarating world of <strong>Angry</strong>, a fast-paced, addictive game where your reflexes and precision are put to the ultimate test. Simple yet challenging, this game will keep you on the edge of your seat as you guide your bird through a series of obstacles to achieve the highest score possible.</p>
+
+                <h3>Gameplay</h3>
+                <p>In <strong>Angry</strong>, the gameplay is straightforward but highly engaging. Tap the screen to make the bird fly upwards and navigate through the constantly spawning pipes. The more pipes you successfully pass, the higher your score. But beware – a single collision with a pipe will end your run, challenging you to beat your previous high score and continue improving your skills.</p>
+
+                <h3>Key Features</h3>
+                <ul>
+                    <li><strong>Intuitive Controls:</strong> Easy-to-learn touch controls that provide a seamless gaming experience.</li>
+                    <li><strong>Endless Fun:</strong> With no levels to complete, the game keeps you hooked by continuously challenging you to achieve a new high score.</li>
+                    <li><strong>Dynamic Obstacles:</strong> Pipes spawn at varying heights, ensuring each playthrough offers a unique challenge.</li>
+                    <li><strong>Engaging Graphics:</strong> Vibrant, visually appealing graphics that enhance the gaming experience.</li>
+                    <li><strong>Competitive Edge:</strong> Compare scores with friends and other players, striving to reach the top of the leaderboard.</li>
+                </ul>
+
+                <h3>Why You'll Love It</h3>
+                <p><strong>Angry</strong> is perfect for gamers of all ages who enjoy fast-paced, reflex-based challenges. The simplicity of the controls combined with the difficulty of the obstacles creates a highly addictive experience that will have you coming back for more. Whether you're looking to pass time or engage in a competitive challenge, <strong>Angry</strong> offers endless hours of fun and excitement.</p>
+
+                <h3>Game Preview</h3>
+                <div class="video-container">
+                    <video controls>
+                        <source src="Angry.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <h3>Download</h3>
+                <a href="Angry.apk" class="download-button" download>Download Angry</a>
+
+                <h3>Technology Used</h3>
+                <p><strong>Angry</strong> was developed using the Unity software, leveraging its powerful engine to create a smooth and engaging gaming experience. The game's graphics, including the bird and pipe designs, were meticulously crafted by hand, ensuring a unique and visually appealing style. The gameplay logic and mechanics were implemented using C#, providing robust and efficient code that enhances the overall performance of the game.</p>
+
+                <h3>Conclusion</h3>
+                <p>Embark on a thrilling adventure with <strong>Angry</strong>. Test your skills, sharpen your reflexes, and see how high you can score. Download <strong>Angry</strong> today and start your journey to become the ultimate bird controller!</p>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

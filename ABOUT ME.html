@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - RAMAN A GHORPADE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #ff3131;
+            --secondary-color: #1a1a1a;
+            --text-color: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            color: var(--text-color);
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            padding: 0 5%;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid var(--primary-color);
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            background-color: var(--secondary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-symbol {
+            color: var(--primary-color);
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            margin: 40px 0;
+            color: var(--primary-color);
+        }
+
+        .profile-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 40px;
+        }
+
+        .profile-picture {
+            width: 30%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(255, 49, 49, 0.2);
+        }
+
+        .biography {
+            width: 65%;
+        }
+
+        .biography h2 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .biography p {
+            margin-bottom: 20px;
+        }
+
+        .skills {
+            margin-top: 40px;
+        }
+
+        .skills h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .skills ul {
+            list-style-type: none;
+        }
+
+        .skills ul li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .skills ul li::before {
+            content: "✦";
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+        }
+
+        .why-choose-me {
+            margin-top: 40px;
+        }
+
+        .why-choose-me h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .why-choose-me ul {
+            list-style-type: none;
+        }
+
+        .why-choose-me ul li {
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .why-choose-me ul li::before {
+            content: "🔥";
+            position: absolute;
+            left: 0;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+
+            nav ul {
+                margin-top: 20px;
+            }
+
+            .profile-section {
+                flex-direction: column;
+            }
+
+            .profile-picture {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .biography {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <span class="logo-symbol">{/}</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="ABOUT ME.html">ABOUT ME</a></li>
+                    <li><a href="Games.html">GAMES</a></li>
+                    <li><a href="Application.html">APPLICATIONS</a></li>
+                    <li><a href="websites.html">WEBSITES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1>About Me</h1>
+
+            <div class="profile-section">
+                <img src="RAMAN.jpg" alt="Raman Anil Ghorpade" class="profile-picture">
+                <div class="biography">
+                    <h2>Biography</h2>
+                    <p>My name is Raman Anil Ghorpade, and I hail from Nagpur, Maharashtra. I am an avid coder and developer with an insatiable passion for all things related to software, AI, and technology.</p>
+                    
+                    <h3>Background in Gaming and Development</h3>
+                    <p>From a young age, I have been captivated by the endless possibilities that coding and technology offer. This fascination has driven me to immerse myself in the world of software development, particularly in gaming, applications, and websites. My journey in this field has been fueled by a relentless dedication to perfecting my craft, often working tirelessly until my projects reach their full potential.</p>
+                    
+                    <div class="skills">
+                        <h3>Skills and Expertise</h3>
+                        <p>My expertise spans across a variety of domains within software development. My core skills include:</p>
+                        <ul>
+                            <li><strong>Coding:</strong> Proficient in multiple programming languages and frameworks, allowing me to tackle diverse development challenges.</li>
+                            <li><strong>Artificial Intelligence:</strong> Hands-on experience with AI and machine learning, creating intelligent solutions that enhance user experiences.</li>
+                            <li><strong>Game Development:</strong> Crafting immersive and engaging games that captivate players and push the boundaries of interactive entertainment.</li>
+                            <li><strong>Application Development:</strong> Designing and building user-friendly, functional, and innovative applications that meet diverse needs.</li>
+                            <li><strong>Web Development:</strong> Developing dynamic, responsive, and visually appealing websites that stand out in the digital landscape.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="why-choose-me">
+                        <h3>Why Choose Me?</h3>
+                        <p>Choosing me for your development projects means opting for a developer who is not just passionate but also highly skilled and dedicated. My unique approach involves:</p>
+                        <ul>
+                            <li><strong>Bringing Imagination to Life:</strong> I have the talent and expertise to turn your dreams and ideas into tangible, functional, and engaging digital solutions.</li>
+                            <li><strong>Unwavering Commitment:</strong> My dedication to my work is unparalleled. I am known for my ability to work continuously, often without breaks, until I achieve the desired outcome.</li>
+                            <li><strong>Personalized Solutions:</strong> Unlike larger companies, I offer a personalized approach to development, ensuring that the final product is a true reflection of your ideas and goals.</li>
+                        </ul>
+                    </div>
+                    
+                    <p>In conclusion, if you are looking for a developer who can transform your vision into reality with unmatched dedication and expertise, look no further. I am confident that you will be thrilled with the results when you choose me for your website, game, or application development needs.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
