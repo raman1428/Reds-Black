@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAMAN A GHORPADE - Tutorials</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #ff3131;
+            --secondary-color: #1a1a1a;
+            --text-color: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            color: var(--text-color);
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            padding: 0 5%;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid var(--primary-color);
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            background-color: var(--secondary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-symbol {
+            color: var(--primary-color);
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            margin: 40px 0;
+            color: var(--primary-color);
+        }
+
+        .tutorial {
+            background-color: var(--secondary-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+
+        .tutorial h2 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .tutorial-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .tutorial-text {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .tutorial-video {
+            flex: 1;
+        }
+
+        .tutorial-video video {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+
+            nav ul {
+                margin-top: 20px;
+            }
+
+            .tutorial-content {
+                flex-direction: column;
+            }
+
+            .tutorial-text {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <span class="logo-symbol">{/}</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="ABOUT%20ME.html">ABOUT ME</a></li>
+                    <li><a href="Games.html">GAMES</a></li>
+                    <li><a href="Application.html">APPLICATIONS</a></li>
+                    <li><a href="#websites">WEBSITES</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1>App and Game Tutorials</h1>
+
+            <div class="tutorial">
+                <h2>CLOCK App Tutorial</h2>
+                <div class="tutorial-content">
+                    <div class="tutorial-text">
+                        <p>CLOCK is a secret vault-like app designed to keep your files safe. Here's how to use it:</p>
+                        <ol>
+                            <li>Open the CLOCK app on your device.</li>
+                            <li>To set your password, simply drag the hour and minute hands to your desired positions.</li>
+                            <li>Remember the time you set, as this will be your password.</li>
+                            <li>To access your hidden files later, open the CLOCK app again.</li>
+                            <li>Move the clock hands to match your password time.</li>
+                            <li>Once the correct time is set, your secret files will be accessible.</li>
+                        </ol>
+                        <p>This innovative method provides a unique and visually intuitive way to secure your private files. Always remember your set time to ensure you can access your protected content.</p>
+                    </div>
+                    <div class="tutorial-video">
+                        <video controls>
+                            <source src="CLOCK.mov" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
