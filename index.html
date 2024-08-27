@@ -10,6 +10,7 @@
             --primary-color: #ff3131;
             --secondary-color: #1a1a1a;
             --text-color: #ffffff;
+            --background-color: #000000;
         }
 
         * {
@@ -19,7 +20,7 @@
         }
 
         body {
-            background-color: black;
+            background-color: var(--background-color);
             color: var(--text-color);
             font-family: 'Roboto', sans-serif;
             line-height: 1.6;
@@ -47,6 +48,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.1);
         }
 
         .logo-symbol {
@@ -69,10 +75,13 @@
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s ease;
+            padding: 5px 10px;
+            border-radius: 5px;
         }
 
         nav ul li a:hover {
             color: var(--primary-color);
+            background-color: rgba(255, 49, 49, 0.1);
         }
 
         .images {
@@ -86,6 +95,11 @@
             height: auto;
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(255, 49, 49, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .images img:hover {
+            transform: scale(1.05);
         }
 
         h1 {
@@ -137,6 +151,11 @@
         .about ul li a {
             color: var(--primary-color);
             text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .about ul li a:hover {
+            color: #ff6b6b;
         }
 
         .social-icons {
@@ -166,6 +185,12 @@
 
             nav ul {
                 margin-top: 20px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            nav ul li {
+                margin: 5px 10px;
             }
 
             .images {
@@ -192,6 +217,7 @@
                     <li><a href="Games.html">GAMES</a></li>
                     <li><a href="Application.html">APPLICATIONS</a></li>
                     <li><a href="#websites">WEBSITES</a></li>
+                    <li><a href="TUTORIALS.html">TUTORIALS</a></li>
                     <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
@@ -228,6 +254,7 @@
                     <li><a href="Games.html">Games</a>: Explore the immersive and engaging games I've developed.</li>
                     <li><a href="Application.html">Applications</a>: Check out the versatile and user-friendly applications I've created.</li>
                     <li><a href="#websites">Websites</a>: View the dynamic and responsive websites I've designed.</li>
+                    <li><a href="TUTORIALS.html">Tutorials</a>: Access step-by-step guides for my apps and games.</li>
                     <li><a href="#contact">Contact</a>: Get in touch to discuss your project ideas and collaboration opportunities.</li>
                 </ul>
             </div>
