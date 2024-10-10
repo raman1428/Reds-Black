@@ -164,6 +164,19 @@
             background-color: #ff5555;
         }
 
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .spec-item {
+            background-color: var(--secondary-color);
+            padding: 15px;
+            border-radius: 5px;
+        }
+
         @media (max-width: 768px) {
             header {
                 flex-direction: column;
@@ -198,10 +211,70 @@
 
             <div class="app-list">
                 <div class="app-item">
+                    <h3><a href="#clock">Clock</a></h3>
+                    <p>A unique blend of a regular clock app with a secure vault for keeping your files, documents, photos, videos, and music safe.</p>
+                </div>
+                <div class="app-item">
                     <h3><a href="#crimson-chord">Crimson Chord</a></h3>
                     <p>A user-friendly music player designed to load and play all MP3 audio songs stored on your device's local storage.</p>
                 </div>
-                <!-- Add more application items here as you develop them -->
+            </div>
+
+            <div id="clock" class="app-details">
+                <h2>Clock</h2>
+                <h3>Timekeeper of Your Secrets</h3>
+                <p>Clock Vault is not just a clock app, it's a secure sanctuary for your digital life. It's a unique blend of a regular clock app with a secure vault that allows you to keep your files, documents, photos, videos, and music safe.</p>
+
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Beautiful clock interface with both analog and digital displays</li>
+                    <li>Innovative security through clock hand password system</li>
+                    <li>Secure vault for private file storage</li>
+                    <li>Support for various file types (photos, videos, documents, music)</li>
+                    <li>Simple drag-and-drop file management</li>
+                    <li>Complete privacy with local-only storage</li>
+                </ul>
+
+                <h3>App Preview</h3>
+                <div class="video-container">
+                    <video controls>
+                        <source src="CLOCK.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <h3>Technical Specifications</h3>
+                <div class="specs-grid">
+                    <div class="spec-item">
+                        <h4>Version</h4>
+                        <p>1.1.8 (September 30, 2024)</p>
+                    </div>
+                    <div class="spec-item">
+                        <h4>Requirements</h4>
+                        <p>Android 7.0 and up</p>
+                    </div>
+                    <div class="spec-item">
+                        <h4>Download Size</h4>
+                        <p>59-60 MB</p>
+                    </div>
+                    <div class="spec-item">
+                        <h4>Content Rating</h4>
+                        <p>Rated for 3+</p>
+                    </div>
+                </div>
+
+                <h3>Privacy & Security</h3>
+                <p>We take your privacy seriously. Clock does not collect or store any of your personal data. All files are stored securely on your local device only, ensuring complete privacy and security.</p>
+
+                <h3>Download</h3>
+                <a href="https://play.google.com/store/apps/details?id=com.chrimson.clock" class="download-button" target="_blank">Download on Google Play</a>
+
+                <h3>Technologies Used</h3>
+                <ul>
+                    <li><strong>Programming Language:</strong> Kotlin</li>
+                    <li><strong>Architecture:</strong> MVVM</li>
+                    <li><strong>Dependency Injection:</strong> Hilt</li>
+                </ul>
             </div>
 
             <div id="crimson-chord" class="app-details">
